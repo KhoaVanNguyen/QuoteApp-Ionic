@@ -1,0 +1,28 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title> {{ quote?.person }} </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content text-center>
+
+  <ion-card>
+
+    <ion-card-content>
+      <p> {{ quote?.text }}  </p>
+
+    </ion-card-content>
+    <ion-row>
+      <ion-col>
+        <button ion-button round color="danger" (click)="onClose(true)" > Unfavorite </button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+
+  <button ion-button color="secondary"   (click)="onClose(false)" >  Back  </button>
+
+</ion-content>
